@@ -52,7 +52,7 @@ st.write(eca)
 dataframe=pd.DataFrame({"Hours Studied":hour_studied,"Previous Scores":prev_score,"Sleep Hours":sleep_hours,"Sample Question Papers Practiced":paper,"ECA":eca})
 # st.write(dataframe)
 scaled_data=scaler.transform(dataframe)
-st.write(scaled_data)
+# st.write(scaled_data)
 
 if st.button("predict"):
     prediction=model.predict(scaled_data)[0]
